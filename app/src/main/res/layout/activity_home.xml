@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#79E8F6"
-    tools:context=".MainActivity">
+    android:background="#DAB7FD"
+    tools:context=".HomeActivity">
 
 
     <ImageView
@@ -19,8 +19,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/usernameEt"
+    <TextView
+        android:id="@+id/usernameTv"
         android:layout_width="match_parent"
         android:layout_height="54dp"
         android:layout_marginStart="20dp"
@@ -29,7 +29,6 @@
         android:autofillHints="johndoe123"
         android:background="@color/white"
         android:hint="@string/username"
-        android:inputType="text"
         android:paddingStart="20dp"
         android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="@+id/profileImage"
@@ -37,8 +36,8 @@
         app:layout_constraintTop_toBottomOf="@+id/profileImage"
         tools:ignore="RtlSymmetry" />
 
-    <EditText
-        android:id="@+id/nameEt"
+    <TextView
+        android:id="@+id/nameTv"
         android:layout_width="match_parent"
         android:layout_height="54dp"
         android:layout_marginStart="20dp"
@@ -47,16 +46,15 @@
         android:autofillHints=""
         android:background="@color/white"
         android:hint="@string/name"
-        android:inputType="text"
         android:paddingStart="20dp"
         android:textColorHint="#757575"
-        app:layout_constraintEnd_toEndOf="@+id/usernameEt"
-        app:layout_constraintStart_toStartOf="@+id/usernameEt"
-        app:layout_constraintTop_toBottomOf="@+id/usernameEt"
+        app:layout_constraintEnd_toEndOf="@+id/usernameTv"
+        app:layout_constraintStart_toStartOf="@+id/usernameTv"
+        app:layout_constraintTop_toBottomOf="@+id/usernameTv"
         tools:ignore="RtlSymmetry" />
 
-    <EditText
-        android:id="@+id/emailEt"
+    <TextView
+        android:id="@+id/emailTv"
         android:layout_width="match_parent"
         android:layout_height="54dp"
         android:layout_marginStart="20dp"
@@ -65,16 +63,15 @@
         android:autofillHints="abcd@email.com"
         android:background="@color/white"
         android:hint="@string/email"
-        android:inputType="textEmailAddress"
         android:paddingStart="20dp"
         android:textColorHint="#00838F"
-        app:layout_constraintEnd_toEndOf="@+id/nameEt"
-        app:layout_constraintStart_toStartOf="@+id/nameEt"
-        app:layout_constraintTop_toBottomOf="@+id/nameEt"
+        app:layout_constraintEnd_toEndOf="@+id/nameTv"
+        app:layout_constraintStart_toStartOf="@+id/nameTv"
+        app:layout_constraintTop_toBottomOf="@+id/nameTv"
         tools:ignore="RtlSymmetry" />
 
-    <EditText
-        android:id="@+id/ageEt"
+    <TextView
+        android:id="@+id/ageTv"
         android:layout_width="match_parent"
         android:layout_height="54dp"
         android:layout_marginStart="20dp"
@@ -83,16 +80,15 @@
         android:autofillHints="1000"
         android:background="@color/white"
         android:hint="@string/age"
-        android:inputType="numberDecimal"
         android:paddingStart="20dp"
         android:textColorHint="#757575"
-        app:layout_constraintEnd_toEndOf="@+id/emailEt"
-        app:layout_constraintStart_toStartOf="@+id/emailEt"
-        app:layout_constraintTop_toBottomOf="@+id/emailEt"
+        app:layout_constraintEnd_toEndOf="@+id/emailTv"
+        app:layout_constraintStart_toStartOf="@+id/emailTv"
+        app:layout_constraintTop_toBottomOf="@+id/emailTv"
         tools:ignore="RtlSymmetry" />
 
-    <EditText
-        android:id="@+id/addressEt"
+    <TextView
+        android:id="@+id/addressTv"
         android:layout_width="match_parent"
         android:layout_height="54dp"
         android:layout_marginStart="20dp"
@@ -101,12 +97,11 @@
         android:autofillHints="abc@email.com"
         android:background="@color/white"
         android:hint="@string/address"
-        android:inputType="text"
         android:paddingStart="20dp"
         android:textColorHint="#757575"
-        app:layout_constraintEnd_toEndOf="@+id/ageEt"
-        app:layout_constraintStart_toStartOf="@+id/ageEt"
-        app:layout_constraintTop_toBottomOf="@+id/ageEt"
+        app:layout_constraintEnd_toEndOf="@+id/ageTv"
+        app:layout_constraintStart_toStartOf="@+id/ageTv"
+        app:layout_constraintTop_toBottomOf="@+id/ageTv"
         tools:ignore="RtlSymmetry" />
 
     <Button
@@ -116,12 +111,11 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="15dp"
-        android:text="@string/go_home"
+        android:text="@string/go_main"
         android:textAllCaps="true"
         android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/addressEt"
-        app:layout_constraintStart_toStartOf="@+id/addressEt"
-        app:layout_constraintTop_toBottomOf="@+id/addressEt" />
-
+        app:layout_constraintEnd_toEndOf="@+id/addressTv"
+        app:layout_constraintStart_toStartOf="@+id/addressTv"
+        app:layout_constraintTop_toBottomOf="@+id/addressTv" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
