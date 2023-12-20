@@ -7,20 +7,23 @@
     android:background="#79E8F6"
     tools:context=".MainActivity">
 
+    <!--    1. Create Two activity Main and Home.-->
+    <!--    2. In Main you need to design a signup page and send the data by intent. (profile image, username, name, email, age, address will be taken from user)-->
+    <!--    3. In Home you need show data by intent which is send by Main.-->
 
     <ImageView
         android:id="@+id/profileImage"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="48dp"
-        android:contentDescription="@string/profle_image"
-        android:src="@color/black"
+        android:contentDescription="@string/profile_image"
+        android:src="@drawable/profile_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/usernameEt"
+        android:id="@+id/userNameEt"
         android:layout_width="match_parent"
         android:layout_height="54dp"
         android:layout_marginStart="20dp"
@@ -50,9 +53,9 @@
         android:inputType="text"
         android:paddingStart="20dp"
         android:textColorHint="#757575"
-        app:layout_constraintEnd_toEndOf="@+id/usernameEt"
-        app:layout_constraintStart_toStartOf="@+id/usernameEt"
-        app:layout_constraintTop_toBottomOf="@+id/usernameEt"
+        app:layout_constraintEnd_toEndOf="@+id/userNameEt"
+        app:layout_constraintStart_toStartOf="@+id/userNameEt"
+        app:layout_constraintTop_toBottomOf="@+id/userNameEt"
         tools:ignore="RtlSymmetry" />
 
     <EditText
@@ -110,13 +113,13 @@
         tools:ignore="RtlSymmetry" />
 
     <Button
-        android:id="@+id/submitBtn"
+        android:id="@+id/goHomeBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="15dp"
-        android:text="@string/go_home"
+        android:text="@string/go_to_home"
         android:textAllCaps="true"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/addressEt"
